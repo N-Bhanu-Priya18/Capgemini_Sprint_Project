@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Groups Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Groups Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="functional"/>
+        <include name="integration"/>
+        <include name="system"/>
+        <include name="regression"/>
+        <include name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ecom.swaglabs.tests.product.ProductValidTest">
+        <methods>
+          <include name="TC_011_allProducts"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+          <include name="openDatabaseConnectivity"/>
+          <include name="closeTestData"/>
+          <include name="closeDatabaseConnectivity"/>
+          <include name="closeApplication"/>
+          <include name="loginToApplication"/>
+          <include name="launchApplication"/>
+          <include name="createTestDataObject"/>
+        </methods>
+      </class> <!-- ecom.swaglabs.tests.product.ProductValidTest -->
+    </classes>
+  </test> <!-- Groups Tests(failed) -->
+</suite> <!-- Failed suite [Groups Test Suite] -->

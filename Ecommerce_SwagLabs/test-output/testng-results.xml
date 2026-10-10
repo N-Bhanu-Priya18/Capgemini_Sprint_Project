@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Open DataBase Connectivity]]>
+    </line>
+    <line>
+      <![CDATA[Pre-conditions]]>
+    </line>
+    <line>
+      <![CDATA[Launch the browser: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Before Method Execution]]>
+    </line>
+    <line>
+      <![CDATA[Login Done]]>
+    </line>
+    <line>
+      <![CDATA[TC_039: Verifying Checkout fails when First Name is empty]]>
+    </line>
+    <line>
+      <![CDATA[TC_039 - Checkout Failed When First Name Is Empty]]>
+    </line>
+    <line>
+      <![CDATA[After Method Execution]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
+      <![CDATA[Launch the browser: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Before Method Execution]]>
+    </line>
+    <line>
+      <![CDATA[Login Done]]>
+    </line>
+    <line>
+      <![CDATA[TC_040: Verifying Checkout fails when Postal Code is empty]]>
+    </line>
+    <line>
+      <![CDATA[TC_040 - Checkout Failed When Postal Code Is Empty]]>
+    </line>
+    <line>
+      <![CDATA[After Method Execution]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
+      <![CDATA[Post-conditions]]>
+    </line>
+    <line>
+      <![CDATA[Close DataBase Connectivity]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-10T10:41:36 IST" name="Default suite" finished-at="2026-10-10T10:41:45 IST" duration-ms="8840">
+    <groups>
+      <group name="negative">
+        <method signature="CheckoutInvalidTest.TC_039_firstNameEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_039_firstNameEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+        <method signature="CheckoutInvalidTest.TC_040_postalCodeEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_040_postalCodeEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+      </group> <!-- negative -->
+      <group name="functional">
+        <method signature="CheckoutInvalidTest.TC_039_firstNameEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_039_firstNameEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+        <method signature="CheckoutInvalidTest.TC_040_postalCodeEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_040_postalCodeEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+      </group> <!-- functional -->
+      <group name="regression">
+        <method signature="CheckoutInvalidTest.TC_039_firstNameEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_039_firstNameEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+        <method signature="CheckoutInvalidTest.TC_040_postalCodeEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" name="TC_040_postalCodeEmpty" class="ecom.swaglabs.tests.checkout.CheckoutInvalidTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2026-10-10T10:41:36 IST" name="Default test" finished-at="2026-10-10T10:41:45 IST" duration-ms="8840">
+      <class name="ecom.swaglabs.tests.checkout.CheckoutInvalidTest">
+        <test-method is-config="true" signature="openDatabaseConnectivity()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:36 IST" name="openDatabaseConnectivity" finished-at="2026-10-10T10:41:36 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Open DataBase Connectivity]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openDatabaseConnectivity -->
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:36 IST" name="preConditions" finished-at="2026-10-10T10:41:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Pre-conditions]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="createTestDataObject()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:36 IST" name="createTestDataObject" finished-at="2026-10-10T10:41:37 IST" duration-ms="814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTestDataObject -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:37 IST" name="launchApplication" finished-at="2026-10-10T10:41:40 IST" duration-ms="2963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launch the browser: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Before Method Execution]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:40 IST" name="loginToApplication" finished-at="2026-10-10T10:41:40 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="TC_039_firstNameEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:40 IST" name="TC_039_firstNameEmpty" finished-at="2026-10-10T10:41:41 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_039: Verifying Checkout fails when First Name is empty]]>
+            </line>
+            <line>
+              <![CDATA[TC_039 - Checkout Failed When First Name Is Empty]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_039_firstNameEmpty -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:41 IST" name="closeApplication" finished-at="2026-10-10T10:41:41 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[After Method Execution]]>
+            </line>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:41 IST" name="launchApplication" finished-at="2026-10-10T10:41:43 IST" duration-ms="1964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launch the browser: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Before Method Execution]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:43 IST" name="loginToApplication" finished-at="2026-10-10T10:41:44 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="TC_040_postalCodeEmpty()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:44 IST" name="TC_040_postalCodeEmpty" finished-at="2026-10-10T10:41:44 IST" duration-ms="781" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_040: Verifying Checkout fails when Postal Code is empty]]>
+            </line>
+            <line>
+              <![CDATA[TC_040 - Checkout Failed When Postal Code Is Empty]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_040_postalCodeEmpty -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:44 IST" name="closeApplication" finished-at="2026-10-10T10:41:45 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[After Method Execution]]>
+            </line>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="closeTestData()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:45 IST" name="closeTestData" finished-at="2026-10-10T10:41:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTestData -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:45 IST" name="postConditions" finished-at="2026-10-10T10:41:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Post-conditions]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="closeDatabaseConnectivity()[pri:0, instance:ecom.swaglabs.tests.checkout.CheckoutInvalidTest@7586beff]" started-at="2026-10-10T10:41:45 IST" name="closeDatabaseConnectivity" finished-at="2026-10-10T10:41:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Close DataBase Connectivity]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDatabaseConnectivity -->
+      </class> <!-- ecom.swaglabs.tests.checkout.CheckoutInvalidTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

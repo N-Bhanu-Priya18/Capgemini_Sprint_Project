@@ -1,0 +1,723 @@
+<html>
+<head>
+<title>TestNG:  Functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 10 09:59:20 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>226 seconds (226747 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_005_loginLogout()'><b>TC_005_loginLogout</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-287056540" onClick='toggleBox("Output-287056540", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-287056540" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-287056540">
+TC_005: Verifying complete login and logout flow<br/>
+TC_005 Passed: User logged out successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_044_resetAppStateClearsCart()'><b>TC_044_resetAppStateClearsCart</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-2126517312" onClick='toggleBox("Output-2126517312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2126517312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2126517312">
+TC_044: Verifying Reset App State clears Cart<br/>
+TC_044 - Reset App State Cleared Cart Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_004_accessProducts()'><b>TC_004_accessProducts</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-1987428721" onClick='toggleBox("Output-1987428721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987428721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987428721">
+TC_004: Verifying logged-in user can access products<br/>
+TC_004 Passed: Product names, prices and descriptions are accessible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_037_checkoutInformationPageLoads()'><b>TC_037_checkoutInformationPageLoads</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-1100576285" onClick='toggleBox("Output-1100576285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1100576285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1100576285">
+TC_037: Verifying Checkout Information page loads<br/>
+TC_037 - Checkout Information Page Loaded Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_043_allItemsNavigatesToProductCatalog()'><b>TC_043_allItemsNavigatesToProductCatalog</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-501758945" onClick='toggleBox("Output-501758945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-501758945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-501758945">
+TC_043: Verifying All Items navigates to Product Catalog<br/>
+TC_043 - All Items Navigated To Product Catalog<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_048_lazyLoadOption()'><b>TC_048_lazyLoadOption</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-1820277494" onClick='toggleBox("Output-1820277494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1820277494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1820277494">
+TC_048: Verifying Lazy Load option<br/>
+TC_048 - Lazy Load Page Opened Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_026_verifyResetAppStateClearsCart()'><b>TC_026_verifyResetAppStateClearsCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1722366757" onClick='toggleBox("Output-1722366757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1722366757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1722366757">
+TC_026: Verifying Reset App State clears Cart<br/>
+TC_026 - Reset App State cleared Cart successfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_021_verifyUserCanAddSingleProductToCart()'><b>TC_021_verifyUserCanAddSingleProductToCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1321368652" onClick='toggleBox("Output-1321368652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1321368652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321368652">
+TC_021: Verifying user can add single product to Cart<br/>
+TC_021 - Single product added to Cart successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_022_verifyUserCanRemoveProductFromCart()'><b>TC_022_verifyUserCanRemoveProductFromCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1998372115" onClick='toggleBox("Output-1998372115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1998372115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1998372115">
+TC_022: Verifying user can remove product from Cart<br/>
+TC_022 - Product removed from Cart successfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_024_verifyProductCanProceedToCheckout()'><b>TC_024_verifyProductCanProceedToCheckout</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1386693416" onClick='toggleBox("Output-1386693416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1386693416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1386693416">
+TC_024: Verifying product can proceed to Checkout<br/>
+TC_024 - Product proceeded to Checkout successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_027_verifyCartBadgeDisplaysCorrectProductCount()'><b>TC_027_verifyCartBadgeDisplaysCorrectProductCount</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-657218237" onClick='toggleBox("Output-657218237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657218237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657218237">
+TC_027: Verifying Cart badge displays correct product count<br/>
+TC_027 - Cart badge count verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_023_verifyMultipleProductsAreDisplayedInCart()'><b>TC_023_verifyMultipleProductsAreDisplayedInCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1289671373" onClick='toggleBox("Output-1289671373", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1289671373" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1289671373">
+TC_023: Verifying multiple products are displayed in Cart<br/>
+TC_023 - Multiple products displayed in Cart successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_011_allProducts()'><b>TC_011_allProducts</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-277549599" onClick='toggleBox("Output-277549599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-277549599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-277549599">
+TC_011: Verifying all products are displayed<br/>
+Image src: https://www.saucedemo.com/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg, Displayed: true<br/>
+Image src: https://www.saucedemo.com/assets/bike-light-1200x1500-DxcZRFOA.jpg, Displayed: true<br/>
+Image src: https://www.saucedemo.com/assets/bolt-shirt-1200x1500-mR0ldpVS.jpg, Displayed: true<br/>
+Image src: https://www.saucedemo.com/assets/sauce-pullover-1200x1500-BfbI-PSd.jpg, Displayed: true<br/>
+Image src: https://www.saucedemo.com/assets/red-onesie-1200x1500-BrSuq0ic.jpg, Displayed: true<br/>
+Image src: https://www.saucedemo.com/assets/red-tatt-1200x1500-E-qp6aYf.jpg, Displayed: true<br/>
+TC_011 - All Products Displayed Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_007_loginPageControls()'><b>TC_007_loginPageControls</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-742891603" onClick='toggleBox("Output-742891603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-742891603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-742891603">
+TC_007: Verifying essential Login page controls<br/>
+TC_007 Passed: Username, Password and Login button are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_033_productDetailsDisplayedInCheckout()'><b>TC_033_productDetailsDisplayedInCheckout</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-783927213" onClick='toggleBox("Output-783927213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-783927213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-783927213">
+TC_033: Verifying product details are displayed in Checkout<br/>
+TC_033 - Cart Product Details Displayed In Checkout Overview<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_001_validLogin()'><b>TC_001_validLogin</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-1467299552" onClick='toggleBox("Output-1467299552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1467299552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1467299552">
+TC_001: Verifying login with valid username and password<br/>
+TC_001 Passed: User successfully logged in<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutInvalidTest.TC_040_postalCodeEmpty()'><b>TC_040_postalCodeEmpty</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutInvalidTest<br/>
+<a href="#Output-2050715938" onClick='toggleBox("Output-2050715938", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2050715938" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2050715938">
+TC_040: Verifying Checkout fails when Postal Code is empty<br/>
+TC_040 - Checkout Failed When Postal Code Is Empty<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutInvalidTest@291caca8</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_046_logoutFromMenu()'><b>TC_046_logoutFromMenu</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-2117653154" onClick='toggleBox("Output-2117653154", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2117653154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2117653154">
+TC_046: Verifying Logout from Hamburger Menu<br/>
+TC_046 - Logout From Menu Successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_006_loginAgainAfterLogout()'><b>TC_006_loginAgainAfterLogout</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-1608357825" onClick='toggleBox("Output-1608357825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1608357825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1608357825">
+TC_006: Verifying user can login again after logout<br/>
+TC_006 Passed: User logged in successfully again<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginInvalidTest.TC_009_invalidUsername()'><b>TC_009_invalidUsername</b><br>Test class: ecom.swaglabs.tests.login.LoginInvalidTest<br/>
+<a href="#Output-990226843" onClick='toggleBox("Output-990226843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-990226843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-990226843">
+TC_009: Verifying login fails with invalid username<br/>
+TC_009 Passed: Appropriate error message is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginInvalidTest@6200f9cb</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest.TC_050_menuCannotBeAccessedBeforeLogin()'><b>TC_050_menuCannotBeAccessedBeforeLogin</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest<br/>
+<a href="#Output-21063905" onClick='toggleBox("Output-21063905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21063905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21063905">
+TC_050: Verifying Menu cannot be accessed before login<br/>
+TC_050 - Menu Not Accessible Before Login<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest@5b94b04d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartInvalidTest.TC_030_verifyRemovedProductIsNotDisplayedInCart()'><b>TC_030_verifyRemovedProductIsNotDisplayedInCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartInvalidTest<br/>
+<a href="#Output-1905420854" onClick='toggleBox("Output-1905420854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1905420854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1905420854">
+TC_030: Verifying removed product is not displayed in Cart<br/>
+TC_030 - Removed product is not displayed in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartInvalidTest@45b4c3a9</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_002_passwordMasked()'><b>TC_002_passwordMasked</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-1496631838" onClick='toggleBox("Output-1496631838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1496631838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1496631838">
+TC_002: Verifying password is masked<br/>
+TC_002 Passed: Password is masked<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductInvalidTest.TC_020_productNotDuplicatedAfterRefresh()'><b>TC_020_productNotDuplicatedAfterRefresh</b><br>Test class: ecom.swaglabs.tests.product.ProductInvalidTest<br/>
+<a href="#Output-566760932" onClick='toggleBox("Output-566760932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-566760932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-566760932">
+TC_020: Verifying product is not duplicated after refresh<br/>
+TC_020 - Product Not Duplicated After Refresh Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductInvalidTest@4009e306</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_035_completeCheckoutFlow()'><b>TC_035_completeCheckoutFlow</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-466262884" onClick='toggleBox("Output-466262884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-466262884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-466262884">
+TC_035: Verifying complete Checkout flow<br/>
+TC_035 - Complete Checkout Flow Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductInvalidTest.TC_019_invalidProduct()'><b>TC_019_invalidProduct</b><br>Test class: ecom.swaglabs.tests.product.ProductInvalidTest<br/>
+<a href="#Output-181260145" onClick='toggleBox("Output-181260145", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181260145" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181260145">
+TC_019: Verifying product is not added without selecting Add To Cart<br/>
+TC_019 - Product Not Added Without Selecting Add To Cart Passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.product.ProductInvalidTest@4009e306</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_034_checkoutTotalCalculatedCorrectly()'><b>TC_034_checkoutTotalCalculatedCorrectly</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-1045836435" onClick='toggleBox("Output-1045836435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1045836435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1045836435">
+TC_034: Verifying Checkout total is calculated correctly<br/>
+TC_034 - Checkout Total Calculated Correctly<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_047_menuAvailableAfterLogin()'><b>TC_047_menuAvailableAfterLogin</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-1068844659" onClick='toggleBox("Output-1068844659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1068844659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1068844659">
+TC_047: Verifying Hamburger Menu is available after login<br/>
+TC_047 - Menu Available After Login<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginInvalidTest.TC_010_lockedOutUser()'><b>TC_010_lockedOutUser</b><br>Test class: ecom.swaglabs.tests.login.LoginInvalidTest<br/>
+<a href="#Output-273041802" onClick='toggleBox("Output-273041802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273041802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273041802">
+TC_010: Verifying locked out user cannot login<br/>
+TC_010 Passed: Locked out user is prevented from login<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginInvalidTest@6200f9cb</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest.TC_049_menuNotAccessibleAfterLogout()'><b>TC_049_menuNotAccessibleAfterLogout</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest<br/>
+<a href="#Output-1583082378" onClick='toggleBox("Output-1583082378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583082378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583082378">
+TC_049: Verifying Menu is not accessible after logout<br/>
+TC_049 - Menu Not Accessible After Logout<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuInvalidTest@5b94b04d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_045_dynamicCatalogOptionsDisplayed()'><b>TC_045_dynamicCatalogOptionsDisplayed</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-307418240" onClick='toggleBox("Output-307418240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-307418240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-307418240">
+TC_045: Verifying Dynamic Catalog options are displayed<br/>
+TC_045 - Dynamic Catalog Options Displayed Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_014_priceInCart()'><b>TC_014_priceInCart</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-1825102364" onClick='toggleBox("Output-1825102364", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825102364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825102364">
+TC_014: Verifying product price is retained in Cart<br/>
+TC_014 - Product Price Retained In Cart Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_012_sortProductsByPrice()'><b>TC_012_sortProductsByPrice</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-1345069688" onClick='toggleBox("Output-1345069688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1345069688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1345069688">
+TC_012: Verifying products are sorted by price<br/>
+TC_012 - Products Sorted By Price Low To High Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_038_checkoutOverviewPageLoads()'><b>TC_038_checkoutOverviewPageLoads</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-617400603" onClick='toggleBox("Output-617400603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-617400603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-617400603">
+TC_038: Verifying Checkout Overview page loads<br/>
+TC_038 - Checkout Overview Page Loaded Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_041_menuOpensSuccessfully()'><b>TC_041_menuOpensSuccessfully</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-1311429106" onClick='toggleBox("Output-1311429106", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1311429106" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1311429106">
+TC_041: Verifying Hamburger Menu opens successfully<br/>
+TC_041 - Hamburger Menu Opened Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_031_enterValidCheckoutInformation()'><b>TC_031_enterValidCheckoutInformation</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-927008541" onClick='toggleBox("Output-927008541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-927008541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-927008541">
+TC_031: Verifying valid checkout information<br/>
+TC_031 - Valid Checkout Information Entered Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_036_cancelCheckout()'><b>TC_036_cancelCheckout</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-2076427679" onClick='toggleBox("Output-2076427679", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076427679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076427679">
+TC_036: Verifying Checkout can be cancelled<br/>
+TC_036 - Checkout Cancelled Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_018_cartButtons()'><b>TC_018_cartButtons</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-1315209017" onClick='toggleBox("Output-1315209017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1315209017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1315209017">
+TC_018: Verifying Add To Cart buttons are available<br/>
+TC_018 - Add To Cart Buttons Available Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_017_catalog()'><b>TC_017_catalog</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-1744369062" onClick='toggleBox("Output-1744369062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744369062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744369062">
+TC_017: Verifying Product Catalog loads successfully<br/>
+TC_017 - Product Catalog Loads Successfully Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutInvalidTest.TC_039_firstNameEmpty()'><b>TC_039_firstNameEmpty</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutInvalidTest<br/>
+<a href="#Output-895259838" onClick='toggleBox("Output-895259838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-895259838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-895259838">
+TC_039: Verifying Checkout fails when First Name is empty<br/>
+TC_039 - Checkout Failed When First Name Is Empty<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutInvalidTest@291caca8</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_013_productInCart()'><b>TC_013_productInCart</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-1896062177" onClick='toggleBox("Output-1896062177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1896062177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1896062177">
+TC_013: Verifying selected product is added to Cart<br/>
+TC_013 - Product Displayed In Cart Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_015_multipleProducts()'><b>TC_015_multipleProducts</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-726149546" onClick='toggleBox("Output-726149546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-726149546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-726149546">
+TC_015: Verifying multiple products are added to Cart<br/>
+TC_015 - Multiple Products Added To Cart Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_025_verifyCartMaintainsProductWhenNavigatingBack()'><b>TC_025_verifyCartMaintainsProductWhenNavigatingBack</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-1988280166" onClick='toggleBox("Output-1988280166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1988280166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1988280166">
+TC_025: Verifying Cart maintains product when navigating back<br/>
+TC_025 - Cart maintained product successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartInvalidTest.TC_029_verifyProductIsNotAddedWithoutClickingAddToCart()'><b>TC_029_verifyProductIsNotAddedWithoutClickingAddToCart</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartInvalidTest<br/>
+<a href="#Output-910691117" onClick='toggleBox("Output-910691117", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-910691117" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-910691117">
+TC_029: Verifying product is not added without clicking Add To Cart<br/>
+TC_029 - Product was not added without clicking Add to Cart<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartInvalidTest@45b4c3a9</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest.TC_042_menuOptionsDisplayed()'><b>TC_042_menuOptionsDisplayed</b><br>Test class: ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest<br/>
+<a href="#Output-1369314550" onClick='toggleBox("Output-1369314550", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1369314550" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1369314550">
+TC_042: Verifying Hamburger Menu options are displayed<br/>
+TC_042 - Menu Options Displayed Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.hamburgermenu.HamburgerMenuValidTest@8c3b9d</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.login.LoginValidTest.TC_008_enterLoginCredentials()'><b>TC_008_enterLoginCredentials</b><br>Test class: ecom.swaglabs.tests.login.LoginValidTest<br/>
+<a href="#Output-333447190" onClick='toggleBox("Output-333447190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333447190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333447190">
+TC_008: Verifying user can enter login credentials<br/>
+TC_008 Passed: Login credentials are entered correctly<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.login.LoginValidTest@7dc0f706</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.addtocart.AddToCartValidTest.TC_028_verifyCartPageOpensAfterAddingProduct()'><b>TC_028_verifyCartPageOpensAfterAddingProduct</b><br>Test class: ecom.swaglabs.tests.addtocart.AddToCartValidTest<br/>
+<a href="#Output-227935585" onClick='toggleBox("Output-227935585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-227935585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-227935585">
+TC_028: Verifying Cart page opens after adding product<br/>
+TC_028 - Cart page opened successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.addtocart.AddToCartValidTest@399c4be1</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.product.ProductValidTest.TC_016_selectedProductAddedToCart()'><b>TC_016_selectedProductAddedToCart</b><br>Test class: ecom.swaglabs.tests.product.ProductValidTest<br/>
+<a href="#Output-519650817" onClick='toggleBox("Output-519650817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-519650817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-519650817">
+TC_016: Verifying selected product is added to Cart<br/>
+TC_016 - Selected Product Added To Cart Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.product.ProductValidTest@6a2f6f80</td></tr>
+<tr>
+<td title='ecom.swaglabs.tests.checkout.CheckoutValidTest.TC_032_completeOrderFromOverview()'><b>TC_032_completeOrderFromOverview</b><br>Test class: ecom.swaglabs.tests.checkout.CheckoutValidTest<br/>
+<a href="#Output-1203016910" onClick='toggleBox("Output-1203016910", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1203016910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1203016910">
+TC_032: Verifying order can be completed from Checkout Overview<br/>
+TC_032 - Order Completed From Checkout Overview Successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecom.swaglabs.tests.checkout.CheckoutValidTest@385e9564</td></tr>
+</table><p>
+</body>
+</html>

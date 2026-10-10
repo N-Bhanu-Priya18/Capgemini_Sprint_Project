@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite">
+
+    <groups>
+        <run>
+            <include name="regression"/>
+        </run>
+    </groups>
+
+    <test name="Regression Tests">
+
+        <packages>
+            <package name="ecom.swaglabs.tests.login"/>
+            <package name="ecom.swaglabs.tests.product"/>
+            <package name="ecom.swaglabs.tests.addtocart"/>
+            <package name="ecom.swaglabs.tests.checkout"/>
+            <package name="ecom.swaglabs.tests.hamburgermenu"/>
+        </packages>
+
+    </test>
+
+</suite>
