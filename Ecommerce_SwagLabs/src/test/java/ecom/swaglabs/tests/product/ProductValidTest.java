@@ -8,6 +8,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import ecom.swaglabs.utility.LoginBaseClass;
+import java.time.Duration;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductValidTest extends LoginBaseClass {
 
@@ -19,11 +22,14 @@ public class ProductValidTest extends LoginBaseClass {
 	    Assert.assertEquals(product.getProductsTitle(), expectedTitle);
 	    Assert.assertEquals(product.getProductNames().size(), product.getProducts().size());
 	    Assert.assertEquals(product.getProductPrices().size(), product.getProducts().size());
-	    Assert.assertEquals(product.getProductImages().size(), product.getProducts().size());
+	    List<WebElement> images = product.getProductImages();
+	    Assert.assertEquals(images.size(), product.getProducts().size());
 
-	    for (int i = 0; i < product.getProductImages().size(); i++) {
-	        String src = product.getProductImages().get(i).getAttribute("src");
-	        boolean displayed = product.getProductImages().get(i).isDisplayed();
+	    for (WebElement image : images) {
+	        String src = image.getAttribute("src");
+	        new WebDriverWait(driver, Duration.ofSeconds(10))
+	                .until(ExpectedConditions.visibilityOf(image));
+	        boolean displayed = image.isDisplayed();
 	        Reporter.log("Image src: " + src + ", Displayed: " + displayed, true);
 	        Assert.assertTrue(displayed, "Product image is not displayed: " + src);
 	        Assert.assertTrue(src != null && !src.isEmpty(), "Product image source is empty");
