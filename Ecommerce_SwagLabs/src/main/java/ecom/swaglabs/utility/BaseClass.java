@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -46,12 +46,10 @@ public class BaseClass extends CommonData {
     protected CheckoutPageThree checkout3;
 
     public void takeScreenshot(String testName) throws IOException {
-        File folder = new File("./screenshot");
-
+        File folder = new File(System.getProperty("user.dir"), "screenshot");
         if (!folder.exists()) {
             folder.mkdirs();
         }
-
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File dest = new File(folder, testName + ".png");
         FileHandler.copy(src, dest);
@@ -93,8 +91,6 @@ public class BaseClass extends CommonData {
             driver = new ChromeDriver(settings);
         } else if (browser.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            driver = new FirefoxDriver();
         } else {
             throw new IllegalArgumentException("Invalid browser: " + browser);
         }

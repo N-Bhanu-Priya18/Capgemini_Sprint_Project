@@ -25,15 +25,4 @@
         </packages>
     </test>
 
-    <test name="Firefox Tests">
-        <parameter name="browser" value="firefox"/>
-        <packages>
-            <package name="ecom.swaglabs.tests.login"/>
-            <package name="ecom.swaglabs.tests.product"/>
-            <package name="ecom.swaglabs.tests.addtocart"/>
-            <package name="ecom.swaglabs.tests.checkout"/>
-            <package name="ecom.swaglabs.tests.hamburgermenu"/>
-        </packages>
-    </test>
-
 </suite>
