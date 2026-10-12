@@ -1,5 +1,7 @@
 package ecom.swaglabs.pages;
-
+import java.time.Duration;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -88,7 +90,7 @@ public class HamburgerMenu {
     }
 
     public void clickResetAppState() {
-        driver.findElement(By.id("reset_sidebar_link")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.id("reset_sidebar_link"))).click();
     }
 
     public boolean isMenuOpen() {
