@@ -1,7 +1,9 @@
 package ecom.swaglabs.pages;
-
-import java.util.List;
+import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,7 +57,9 @@ public class ProductPage {
     }
 
     public String getProductsTitle() {
-        return driver.findElement(By.cssSelector("[data-test='title']")).getText();
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='title']")))
+                .getText();
     }
 
     public void selectSortOption(String option) {
