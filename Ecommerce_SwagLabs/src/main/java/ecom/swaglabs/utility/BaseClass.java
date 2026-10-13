@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -91,7 +92,10 @@ public class BaseClass extends CommonData {
             driver = new ChromeDriver(settings);
         } else if (browser.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
-        } else {
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        }
+        else {
             throw new IllegalArgumentException("Invalid browser: " + browser);
         }
 

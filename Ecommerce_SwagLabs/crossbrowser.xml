@@ -25,4 +25,14 @@
         </packages>
     </test>
 
+	  <test name="Edge Tests">
+        <parameter name="browser" value="edge"/>
+        <packages>
+            <package name="ecom.swaglabs.tests.login"/>
+            <package name="ecom.swaglabs.tests.product"/>
+            <package name="ecom.swaglabs.tests.addtocart"/>
+            <package name="ecom.swaglabs.tests.checkout"/>
+            <package name="ecom.swaglabs.tests.hamburgermenu"/>
+        </packages>
+    </test>
 </suite>
