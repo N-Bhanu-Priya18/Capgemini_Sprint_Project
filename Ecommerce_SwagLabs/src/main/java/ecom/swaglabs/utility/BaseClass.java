@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -76,15 +75,11 @@ public class BaseClass extends CommonData {
         Reporter.log("Post-conditions", true);
     }
 
-    @BeforeClass(groups={"smoke","functional","integration","system","regression","negative"}, alwaysRun=true)
-    public void createTestDataObject() throws IOException {
-        testData = new TestData();
-    }
-
     @Parameters("browser")
-    @BeforeMethod(groups={"smoke","functional","integration","system","regression","negative"}, alwaysRun=true)
+    @BeforeClass(groups={"smoke","functional","integration","system","regression","negative"}, alwaysRun=true)
     public void launchApplication(@Optional("chrome") String browser) throws IOException {
-        if (browser.equalsIgnoreCase("chrome")) {
+    	 testData = new TestData();
+    	if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions settings = new ChromeOptions();
             Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.password_manager_leak_detection", false);
@@ -100,7 +95,7 @@ public class BaseClass extends CommonData {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.get(getData("url"));
 
         login = new LoginPage(driver);
@@ -112,19 +107,10 @@ public class BaseClass extends CommonData {
         checkout3 = new CheckoutPageThree(driver);
 
         Reporter.log("Launch the browser: " + browser, true);
-        Reporter.log("Before Method Execution", true);
+        Reporter.log("Before class Execution", true);
     }
 
-    @AfterMethod(groups={"smoke","functional","integration","system","regression","negative"}, alwaysRun=true)
-    public void closeApplication() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
-
-        Reporter.log("After Method Execution", true);
-        Reporter.log("Close the browser", true);
-    }
+   
 
     @AfterClass(groups={"smoke","functional","integration","system","regression","negative"}, alwaysRun=true)
     public void closeTestData() throws IOException {
@@ -132,5 +118,11 @@ public class BaseClass extends CommonData {
             testData.closeWorkbook();
             testData = null;
         }
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+        Reporter.log("After Class Execution", true);
+        Reporter.log("Close the browser", true);
     }
 }
